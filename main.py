@@ -1,6 +1,7 @@
 from dash import Dash, html
 import pandas as pd
 
+# Lit le fichier CSV avec le délimiteur ';'
 df = pd.read_csv('data/data_covid19.csv', delimiter=';')
 
 # Supprime les lignes avec des valeurs manquantes
@@ -27,7 +28,7 @@ def generate_table(dataframe):
 # Crée l'application Dash
 app = Dash(__name__)
 
-# Mise en page de l'application
+# Définit la mise en page de l'application
 app.layout = html.Div([
     html.H4(children='Les 10 premières lignes de chaque colonne'),
     generate_table(df)

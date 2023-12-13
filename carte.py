@@ -2,7 +2,6 @@ import pandas as pd
 import folium
 import numpy as np
 from branca.colormap import LinearColormap
-from dash import Dash, html
 
 class Carte:
     def __init__(self):
@@ -44,20 +43,3 @@ class Carte:
 
     def get_map(self):
         return self.m
-
-
-# Crée l'application Dash
-app = Dash(__name__)
-
-# Crée une instance de la classe Carte
-ma_carte = Carte()
-
-# Mise en page de l'application avec une largeur fixe de 40%
-app.layout = html.Div([
-    html.H4(children='Carte des décès par département'),
-    # dcc.Graph pour afficher la carte
-    html.Iframe(srcDoc=ma_carte.get_map().get_root().render(), width='40%', height='600px')
-])
-
-if __name__ == '__main__':
-    app.run_server(debug=True, use_reloader=False)
