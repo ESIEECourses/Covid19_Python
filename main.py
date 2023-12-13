@@ -1,22 +1,21 @@
 from dash import Dash, html
 import pandas as pd
 
-# Lire le fichier CSV avec le délimiteur ';'
 df = pd.read_csv('data/data_covid19.csv', delimiter=';')
 
-# Supprimer les lignes avec des valeurs manquantes
+# Supprime les lignes avec des valeurs manquantes
 df = df.dropna()
 
-# Créer une fonction pour générer le tableau HTML
+# Crée une fonction pour générer le tableau HTML
 def generate_table(dataframe):
     table_rows = []
 
-    # Créer la première ligne avec les noms de colonne
+    # Crée la première ligne avec les noms de colonne
     header_row = [html.Th('Columns')] + [html.Th(col) for col in dataframe.columns]
     table_rows.append(html.Tr(header_row))
 
-    # Créer les lignes avec les valeurs
-    for i in range(min(2000, len(dataframe))):
+    # Crée les lignes avec les valeurs
+    for i in range(min(20, len(dataframe))):
         row_data = [html.Th('Row ' + str(i + 1))] + [html.Td(data) for data in dataframe.iloc[i]]
         table_rows.append(html.Tr(row_data))
 
@@ -25,15 +24,15 @@ def generate_table(dataframe):
         html.Tbody(table_rows[1:])  # Utiliser le reste comme corps
     ])
 
-# Créer l'application Dash
+# Crée l'application Dash
 app = Dash(__name__)
 
-# Définir la mise en page de l'application
+# Mise en page de l'application
 app.layout = html.Div([
     html.H4(children='Les 10 premières lignes de chaque colonne'),
     generate_table(df)
 ])
 
-# Exécuter l'application Dash
+# Exécute l'application Dash
 if __name__ == '__main__':
     app.run_server(debug=True)
