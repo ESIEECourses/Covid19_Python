@@ -31,6 +31,8 @@ class Carte:
 
             color = self.colormap(row['Total Décès'])
 
+            tooltip_text = f"{row['Nom département']} - Total Décès: {row['Total Décès']}"
+
             folium.CircleMarker(
                 location=[float(coord) for coord in row['geo_point_2d'].split(', ')],
                 radius=radius,
@@ -38,7 +40,7 @@ class Carte:
                 fill=True,
                 fill_color=color,
                 fill_opacity=0.7,
-                popup=row['Nom département'] + '<br>Total Décès: ' + str(row['Total Décès'])
+                tooltip=tooltip_text
             ).add_to(self.m)
 
     def get_map(self):
