@@ -1,0 +1,25 @@
+/* styles.css */
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+#app-container {
+    background-color: #0d0d26;
+    border-top: 1px solid #0d0d26;
+}
+
+.dash-app {
+    box-shadow: none;
+}
+
+iframe {
+    border: none;
+    width: 80%;
+    margin-left: 10%;
+}
+
+body, html, #react-entry-point {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
