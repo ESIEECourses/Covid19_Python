@@ -7,6 +7,7 @@ body, html {
 #app-container {
     background-color: #0d0d26;
     border-top: 1px solid #0d0d26;
+    overflow: auto;
 }
 
 .dash-app {
@@ -22,4 +23,8 @@ iframe {
 body, html, #react-entry-point {
     margin-top: 0 !important;
     margin-bottom: 0 !important;
+}
+
+h4 {
+    font-size: 24px;
 }
