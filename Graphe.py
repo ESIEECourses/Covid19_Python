@@ -1,7 +1,7 @@
 import pandas as pd
 import plotly.express as px
 
-data = pd.read_csv('Covid.csv', delimiter=';')
+data = pd.read_csv('data/Covid.csv', delimiter=';')
 
 # Filtrer les données où l'âge n'est pas égal à zéro
 filtered_data = data[data['Valeur de la variable'] != 0]
