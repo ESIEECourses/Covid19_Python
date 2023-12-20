@@ -1,3 +1,4 @@
+from dash import Dash, html, dcc
 from navigator_dashboard import NavigatorDashBoard
 
 class Main:
@@ -7,5 +8,6 @@ class Main:
 
         app.run_server(debug=True, use_reloader=False)
 
-    if __name__ == 'main':
-        main()
+if __name__ == '__main__':
+    main_instance = Main()
+    main_instance.main()
