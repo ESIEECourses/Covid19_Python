@@ -20,7 +20,7 @@ Pour commencer l'utilisation de notre application et visualiser les divers infor
   ```bash
   python main.py
   ```
-  Pour les utilisateurs macOS pas d'inquiétude ! Effectuer la commande suivant :
+  Pour les utilisateurs macOS, pas d'inquiétude ! Effectuer la commande suivante :
   ```bash
   python3 main.py
   ```
