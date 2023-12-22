@@ -18,9 +18,9 @@ Pour commencer l'utilisation de notre application et visualiser les divers infor
   ```
 - Lancement de l'application : pour pouvoir lancer l'application, assurez vous d'être dans le répertoire de l'application depuis le terminal et effectuer la commande suivante pour les machines windows ou linux :
   ```bash
-  python mail.py
+  python main.py
   ```
   Pour les utilisateurs macOS pas d'inquiétude ! Effectuer la commande suivant :
   ```bash
-  python3 mail.py
+  python3 main.py
   ```
