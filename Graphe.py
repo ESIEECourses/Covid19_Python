@@ -19,11 +19,17 @@ class Graphe:
         self.grouped_data['Pourcentage'] = self.grouped_data['Pourcentage'].round(2)
 
         self.fig = px.bar(self.grouped_data, x='Intervalles', y='Pourcentage',
-                     labels={"Pourcentage": "Pourcentage de doses n°1 ", "Intervalles": "Tranches d'âges "},
-                     title="Pourcentage de doses n°1 par tranche d'âges")
+                          labels={"Pourcentage": "Pourcentage de doses n°1", "Intervalles": "Tranches d'âges"},
+                          title="Pourcentage de doses n°1 par tranche d'âges",
+                            color = 'Intervalles',  # Utilisation du paramètre 'color' pour spécifier la couleur par barre
+                            color_discrete_sequence = ['blue']  # Changer la couleur des barres ici
+                          )
 
         self.fig.update_traces(texttemplate='%{y:f}%', textposition='outside')
 
+        self.fig.update_layout(
+            margin=dict(l=50, r=20, t=50, b=50),  # Ajuste les marges
+        )
 
     def get_dash(self):
         return self.fig
