@@ -58,4 +58,4 @@ La dose de rappel a été également en tendance, chez les adultes compris entre
 
 ## Auteurs
 - Kayanthan NADARASA
-- Rachid 
+- Rachid ABDOULALIME 
