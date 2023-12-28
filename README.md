@@ -55,3 +55,7 @@ Enfin, le dernier histogram à droite sur le pourcentage des doses n°2 nous per
 Après deux ans de l'apparition du premier cas de Covid-19 en France, on constate que le taux de dèces en France était toujours présent avec notamment des régions plus touchées que d'autres.   
 Le déploiement des premiers vaccins a permis de réduire cette hausse des dèces, où les adultes représentent la grande partie des vaccinations.   
 La dose de rappel a été également en tendance, chez les adultes compris entre 50 et 59 ans.
+
+## Auteurs
+- Kayanthan NADARASA
+- Rachid 
