@@ -1,10 +1,10 @@
 from dash import Dash, html, dcc
-from navigator_dashboard import NavigatorDashBoard
+from dashboard import DashBoard
 
 class Main:
     def main(self):
-        navigator_dashboard = NavigatorDashBoard()
-        app = navigator_dashboard.createDashApplication()
+        dashboard = DashBoard()
+        app = dashboard.createDashApplication()
 
         app.run_server(debug=True, use_reloader=False)
 
