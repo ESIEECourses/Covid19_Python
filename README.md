@@ -50,7 +50,7 @@ Ce guide est destiné aux développeurs qui souhaitent comprendre l'architecture
 - `map.py`: Définit la classe `Map` pour la création de la carte interactive.
 - `data/`: Dossier contenant les fichiers de données CSV.
 
-### Exemples de modification
+### Modifications et extensions possibles
 - **Changer la source de données :**
   Vous pouvez modifier la source de données en remplaçant le chemin du fichier CSV dans les classes `Histogram` et `Map`.
   
