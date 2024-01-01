@@ -5,6 +5,10 @@ Pour mieux vous accompagnez sur l'utilisation de notre application, vous trouver
   - User Guide
   - Developper Guide
   - Rapport d'analyse 
+
+
+<br><br>
+
             
 ## User Guide
 Pour commencer l'utilisation de notre application et visualiser les divers informations sur le Covid19, vous devez suivres les étapes suivantes pour l'implémenter sur votre machine :  
@@ -30,8 +34,47 @@ Pour commencer l'utilisation de notre application et visualiser les divers infor
   http://localhost:port
   ```   
 
-## Rapport d'analyse
 
+<br><br>
+
+
+## Developper Guide
+Ce guide est destiné aux développeurs qui souhaitent comprendre l'architecture du code, apporter des modifications ou étendre les fonctionnalités existantes.
+### Structure du Projet :
+![Diagramme UML](url_de_votre_image)
+
+<br>
+- `main.py`: Contient la classe principale `Main` qui lance l'application Dash.
+- `dashboard.py`: Définit la classe `DashBoard` qui crée la mise en page de l'application.
+- `histogram.py`: Contient la classe `Histogram` pour la création des graphiques à barres.
+- `map.py`: Définit la classe `Map` pour la création de la carte interactive.
+- `data/`: Dossier contenant les fichiers de données CSV.
+
+### Exemples de modification
+- **Changer la source de données :**
+  Vous pouvez modifier la source de données en remplaçant le chemin du fichier CSV dans les classes `Histogram` et `Map`.
+  
+- **Ajouter de nouvelles fonctionnalités :**
+  Pour ajouter de nouvelles fonctionnalités, explorez les méthodes existantes dans les classes `DashBoard`, `Histogram` et `Map`. Ajoutez de nouveaux composants Dash ou des fonctionnalités de traitement de données.
+
+- **Personnaliser l'apparence :**
+  Personnalisez l'apparence en modifiant le fichier CSS dans le dossier `assets`.
+
+- **Modifier la carte :**
+  Pour apporter des modifications à la carte, explorez la classe `Map`
+
+- **Ajouter une nouvelle visualisation :**
+  Vous avez la possibilité d'ajouter de nouvelles visualisations pour enrichir votre tableau de bord. Pour cela, explorez la classe `Dashboard` et ajoutez une nouvelle méthode `create_additional_visualization()`. Vous pouvez y intégrer un nouveau type de       graphique en utilisant les données COVID-19 existantes.
+
+- **Paramétrage dynamique de la carte :**
+  Permettez aux utilisateurs de choisir les données à afficher sur la carte. Dans la classe `Map`, modifiez la méthode `add_markers()` pour accepter un paramètre `data_column`. Dans la classe `Dashboard`, ajoutez une interface utilisateur (par exemple, une     liste déroulante) pour sélectionner dynamiquement les données à afficher sur la carte.
+  
+
+
+<br><br>
+
+
+## Rapport d'analyse
 ### Contexte
 Notre projet consiste à éclaircir le sujet du Covid-19 en France, pour le second semestre 2021 grâce aux données provenant du site sante.gouv.fr.   
 Plusieurs sujets sont abordés sur le sujet du Covid-19, mais dans notre cas on a voulu analyser le total de décès en fonction dans les divers régions, le taux de vaccination pour la dose n°1 et n°2 en fonction des âges.
@@ -55,6 +98,10 @@ Enfin, le dernier histogram à droite sur le pourcentage des doses n°2 nous per
 Après deux ans de l'apparition du premier cas de Covid-19 en France, on constate que le taux de dèces en France était toujours présent avec notamment des régions plus touchées que d'autres.   
 Le déploiement des premiers vaccins a permis de réduire cette hausse des dèces, où les adultes représentent la grande partie des vaccinations.   
 La dose de rappel a été également en tendance, chez les adultes compris entre 50 et 59 ans.
+
+
+<br><br>
+
 
 ## Auteurs
 - Kayanthan NADARASA
