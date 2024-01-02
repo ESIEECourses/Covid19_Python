@@ -41,8 +41,6 @@ Pour commencer l'utilisation de notre application et visualiser les divers infor
 ## Developper Guide
 Ce guide est destiné aux développeurs qui souhaitent comprendre l'architecture du code, apporter des modifications ou étendre les fonctionnalités existantes.
 ### Structure du Projet :
-![Diagramme UML](url_de_votre_image) <br>
-
 
 - `main.py`: Contient la classe principale `Main` qui lance l'application Dash.
 - `dashboard.py`: Définit la classe `DashBoard` qui crée la mise en page de l'application.
