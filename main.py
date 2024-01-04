@@ -2,7 +2,19 @@ from dash import Dash, html, dcc
 from dashboard import DashBoard
 
 class Main:
+    """
+    Cette classe représente l'exécutable pour lancer l'application
+
+    Méthodes :
+        main(self) : Méthode principale pour lancer l'application
+    """
     def main(self):
+        """
+        Méthode principale pour lancer l'application
+
+        Créer une instance dashboard et l'exécute
+        :return:
+        """
         dashboard = DashBoard()
         app = dashboard.createDashApplication()
 

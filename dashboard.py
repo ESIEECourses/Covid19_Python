@@ -3,12 +3,29 @@ from map import Map
 from histogram import Histogram
 
 class DashBoard:
+    """
+    Cette classe représente le tableau de bord pour visualiser les différentes données sur le Covid-19
+
+    Attributs :
+        carte = Instance de la classe Map qui permet l'affichage de la carte à droite
+        histogram = Instance de la classe Histogram qui permet l'affichage de l'histogramme de gauche sur les doses n°1
+        histogram2 = Instance de la classe Histogram2 qui permet l'affichage de l'histogramme de droite sur les dose n°2
+    """
     def __init__(self):
+        """
+        Initialisation du Dashboard en implémentant une carte et les deux histogrammes
+        """
         self.carte = Map()
         self.histogram = Histogram(False)
         self.histogram2 = Histogram(True)
 
     def createDashApplication(self):
+        """
+        Création de l'application Dash pour afficher les données du Covid-19
+
+        Retourne:
+            Dash : Object qui représente l'application Dashboard
+        """
         self.app = Dash(__name__)
 
         self.app.layout = html.Div(

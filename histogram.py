@@ -2,6 +2,22 @@ import pandas as pd
 import plotly.express as px
 
 class Histogram:
+    """
+    Cette classe représente un histogramme qui affiche les données des doses n°1 du Covid-19 en fonction des âges
+
+    Attributs :
+        isSecondDash (bool) : Indique la deuxième partie du dashboard ( partie des graphes )
+        data : Contient les données des doses n°1 du Covid-19
+        filtered_data : Filtrage des données
+        columnFilter (str) : Nom de la colonne dans le date filtré
+        forDisplayY (str) : Axe des ordonnées dans le graphique
+        forDisplayX (str) : Axe des abscises dans le graphique
+        colorDash (str) : Couleur des barres dans le graphque
+
+    Méthodes :
+        __init__(self, isSecondDash) : Initialise l'objet Histogramme
+        get_dash(self) : Renvoie l'objet graphique
+    """
     def __init__(self, isSecondDash):
         self.isSecondDash = isSecondDash
 
