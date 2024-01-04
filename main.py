@@ -13,7 +13,6 @@ class Main:
         Méthode principale pour lancer l'application
 
         Créer une instance dashboard et l'exécute
-        :return:
         """
         dashboard = DashBoard()
         app = dashboard.createDashApplication()

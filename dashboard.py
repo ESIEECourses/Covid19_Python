@@ -9,7 +9,7 @@ class DashBoard:
     Attributs :
         carte = Instance de la classe Map qui permet l'affichage de la carte à droite
         histogram = Instance de la classe Histogram qui permet l'affichage de l'histogramme de gauche sur les doses n°1
-        histogram2 = Instance de la classe Histogram2 qui permet l'affichage de l'histogramme de droite sur les dose n°2
+        histogram2 = Instance de la classe Histogram2 qui permet l'affichage de l'histogramme de droite sur les doses n°2
     """
     def __init__(self):
         """
@@ -24,7 +24,7 @@ class DashBoard:
         Création de l'application Dash pour afficher les données du Covid-19
 
         Retourne:
-            Dash : Object qui représente l'application Dashboard
+            Dash : Objet qui représente l'application Dashboard
         """
         self.app = Dash(__name__)
 

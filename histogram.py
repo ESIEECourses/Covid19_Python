@@ -9,10 +9,10 @@ class Histogram:
         isSecondDash (bool) : Indique la deuxième partie du dashboard ( partie des graphes )
         data : Contient les données des doses n°1 du Covid-19
         filtered_data : Filtrage des données
-        columnFilter (str) : Nom de la colonne dans le date filtré
+        columnFilter (str) : Nom de la colonne dans la date filtrée
         forDisplayY (str) : Axe des ordonnées dans le graphique
         forDisplayX (str) : Axe des abscises dans le graphique
-        colorDash (str) : Couleur des barres dans le graphque
+        colorDash (str) : Couleur des barres dans le graphique
 
     Méthodes :
         __init__(self, isSecondDash) : Initialise l'objet Histogramme

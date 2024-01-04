@@ -5,9 +5,9 @@ from branca.colormap import LinearColormap
 
 class Map:
     """
-    Cette classe permet de créer une carte géographique qui représente les décès liées au Covid-19 par département en France
+    Cette classe permet de créer une carte géographique qui représente les décès liés au Covid-19 par département en France
 
-    Atibuts :
+    Atributs :
         centre_lat ( float ) : Latitude de centre de la carte
         centre_lon ( float ) : Longitude du centre de la carte
         map_bounds ( list ) : Cordonnées max de la carte
@@ -40,7 +40,6 @@ class Map:
     def add_markers(self):
         """
         Ajouts des marqueurs représentant les décès par département à la carte
-        :return:
         """
         for index, row in self.df.iterrows():
             radius = np.log1p(row['Total Décès']) * 1.5
