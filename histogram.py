@@ -11,7 +11,7 @@ class Histogram:
         filtered_data : Filtrage des données
         columnFilter (str) : Nom de la colonne dans la date filtrée
         forDisplayY (str) : Axe des ordonnées dans le graphique
-        forDisplayX (str) : Axe des abscises dans le graphique
+        forDisplayX (str) : Axe des abscisse dans le graphique
         colorDash (str) : Couleur des barres dans le graphique
 
     Méthodes :

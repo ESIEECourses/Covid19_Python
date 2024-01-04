@@ -10,7 +10,7 @@ class Map:
     Atributs :
         centre_lat ( float ) : Latitude de centre de la carte
         centre_lon ( float ) : Longitude du centre de la carte
-        map_bounds ( list ) : Cordonnées max de la carte
+        map_bounds ( list ) : Coordonnées max de la carte
         min_decès ( int ) : Le minimum de décès dans les données
         max_decès ( int ) : Le maximum de décès dans les données
         colormap : Couleurs pour représenter le niveau de décès
@@ -28,7 +28,7 @@ class Map:
         self.min_decès = self.df['Total Décès'].min()
         self.max_decès = self.df['Total Décès'].max()
 
-        self.colormap = LinearColormap(colors=['orange', 'darkorange', 'red'],
+        self.colormap = LinearColormap(colors=['#FFFF00', '#FFA500', '#FF0000'],
                                        index=[self.min_decès, (self.min_decès + self.max_decès) / 2, self.max_decès],
                                        vmin=self.min_decès, vmax=self.max_decès)
 
