@@ -13,7 +13,7 @@ Pour mieux vous accompagnez sur l'utilisation de notre application, vous trouver
 ## User Guide
 Pour commencer l'utilisation de notre application et visualiser les divers informations sur le Covid19, vous devez suivres les étapes suivantes pour l'implémenter sur votre machine :  
 - Clonage du projet : commencer par cloner le projet sur la machine souhaité, à l'aide du lien présent dans le Git du projet.
-  - Si vous clonez depuis un IDE, copier-collez ce lien :    
+  - Si vous clonez depuis un IDE, copiez-collez ce lien :    
   ```bash
   https://github.com/ESIEECourses/Covid19_Python.git
   ```
