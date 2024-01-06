@@ -29,9 +29,9 @@ Pour commencer l'utilisation de notre application et visualiser les divers infor
   python3 main.py
   ```
 
-- Visualisation du dashboard : pour commencer à naviguer sur le dashboard, il vous suffirat simplment de cliquer sur l'adresse indiqué sur votre terminal ou entrer celui-ci dans un navigateur web :
+- Visualisation du dashboard : pour commencer à naviguer sur le dashboard, il vous suffirat simplement de cliquer sur l'adresse indiqué sur votre terminal ou entrer celui-ci dans un navigateur web :
   ```bash
-  http://localhost:port
+  http://localhost:8050
   ```   
 
 
